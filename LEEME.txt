@@ -1,0 +1,24 @@
+BusquedaHash - Búsqueda secuencial, búsqueda binaria y tabla Hash (Windows Forms, C#)
+
+CÓMO ABRIRLO
+1. Descomprime el .zip y abre BusquedaHash.sln con Visual Studio 2019/2022
+   (carga de trabajo "Desarrollo de escritorio de .NET"; el proyecto usa .NET Framework 4.8).
+2. Presiona F5.
+
+PESTAÑA "EXPERIMENTO"
+- Tamaños N: lista separada por comas (por defecto 1000, 5000, 10000, 50000, 100000, 500000).
+- Búsquedas por tamaño, % de búsquedas exitosas, semilla (misma semilla = mismos datos),
+  función hash (división / multiplicación) y factor de carga (alfa).
+- Las tres técnicas buscan las mismas claves sobre los mismos datos.
+- La tabla muestra comparaciones e iteraciones (total, promedio, éxito/fallo, máximo),
+  tiempo de búsqueda y tiempo de preparación (ordenar / construir la tabla).
+- "Exportar a CSV" guarda todo para graficar en Excel.
+
+PESTAÑA "BÚSQUEDA INDIVIDUAL"
+- Genera pocos datos (N <= 1000), muestra el arreglo, el arreglo ordenado y el contenido de la
+  tabla hash, y busca una clave con los tres métodos mostrando comparaciones e iteraciones.
+
+ARCHIVOS
+- Algoritmos\BusquedaSecuencial.cs, BusquedaBinaria.cs, TablaHash.cs  -> los tres métodos
+- Algoritmos\Experimento.cs                                          -> lógica del experimento
+- Form1.cs / Form1.Designer.cs                                       -> interfaz
